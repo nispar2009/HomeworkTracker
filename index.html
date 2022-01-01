@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Tracker!</title>
+    <link rel="stylesheet" href="https://nispar2009.github.io/spectrum_stylr/General/Spectrum.css">
+</head>
+
+<body>
+    <div class="text-center">
+        <h1 class="text-blue">Homework Tracker!</h1>
+        <h2 class="text-green">Search</h2>
+
+        <input type="search" name="q" placeholder="Subject..." id="q" class="form form-line" onkeyup="search('sub')">
+        &nbsp;&nbsp;&nbsp;&nbsp; OR &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="search" name="q2" placeholder="Content..." id="q2" class="form form-line" onkeyup="search('cnt')">
+
+        <br><br><br>
+
+        <h2 class="text-green">Add</h2>
+        <input type="text" name="sub" placeholder="Subject..." id="sub" class="form form-line">
+        <br><br>
+        <input type="text" name="sub" placeholder="Content..." id="cnt" class="form form-line">
+        <br><br>
+        <button class="btn btn-blue-outline" onclick="addHw()">Add</button>
+    </div>
+
+    <br><br>
+
+    <h2 id="motivate" class="text-green text-center">No work remaining!</h2>
+
+    <ul id="hw"></ul>
+
+    <br><br><br>
+
+    <script src="https://nispar2009.github.io/spectrum_stylr/Spectrum.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
