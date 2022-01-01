@@ -133,19 +133,6 @@ markCompl = id2 => {
     update()
 }
 
-search = which => {
-    let searchHw
-
-    if (which == 'sub') {
-        searchHw = filterListObject(hw, getInput("q"), "subject")
-    }
-    if (which == 'cnt') {
-        searchHw = filterListObject(hw, getInput("q2"), "cnt")
-    }
-
-    update2(searchHw)
-}
-
 setDoing = hwItem => {
     doing = hwItem
     update()
