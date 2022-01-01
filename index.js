@@ -51,28 +51,6 @@ update = () => {
     console.log(hw)
 }
 
-update2 = arr => {
-    setValue("hw", "")
-    for (const hwItem of arr) {
-        let btnCompl, p
-
-        if (hwItem.compl) {
-            btnCompl = "<button class='btn btn-green-outline btn-sm' onclick='markCompl(" + hwItem.id + ")'>Mark as unfinished</button>"
-            p = "<p><del>" + hwItem.subject + ": " + hwItem.cnt + "</del><p>"
-        }
-        else {
-            btnCompl = "<button class='btn btn-green-outline btn-sm' onclick='markCompl(" + hwItem.id + ")'>Mark as finished</button>"
-            p = "<p>" + hwItem.subject + ": " + hwItem.cnt + "<p>"
-        }
-
-        let btnDel = "<button class='btn btn-red-outline btn-sm' onclick='delHw(" + hwItem.id + ")'>Delete</button>"
-
-        document.getElementById("hw").innerHTML += "<li>" + p + btnCompl + " " + btnDel + "</li>"
-    }
-
-    console.log(hw)
-}
-
 addHw = () => {
     hw.push({
         id: counter,
