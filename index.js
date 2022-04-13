@@ -28,7 +28,7 @@ update = () => {
     for (const hwItem of hw) {
         let p = hwItem.cnt
         let btnDel = "<button class='btn btn-green-outline btn-sm' onclick='delHw(" + hwItem.id + ")'>Finish</button>"
-        document.getElementById("hw").innerHTML += "<li>" + p + btnDel + "</li>"
+        document.getElementById("hw").innerHTML += "<li>" + p + " " + btnDel + "</li>"
     }
 
     console.log(hw)
